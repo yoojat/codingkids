@@ -21,7 +21,10 @@ module.exports = {
       backgroundImage: {
         'main-background': `url('/background_image.jpg')`,
       },
+      textShadow: {
+        '2xl': '2px 2px 8px rgba(0,0,0,1)',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-textshadow')],
 };

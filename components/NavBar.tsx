@@ -8,7 +8,7 @@ const TopBarWrapper = tw.div`
 justify-between
 items-center
 flex
-h-28
+h-15
 md:h-28
 px-7
 lg:px-24
@@ -29,8 +29,8 @@ const TopLogoContainer = tw.div`
 `;
 
 const ImageContainer = tw.div`
-w-20
-h-20
+w-10
+h-10
 relative
 mt-2
 `;
@@ -132,8 +132,8 @@ export default function NavBar({
           </Link>
           <Link href='/'>
             <a>
-              <span className='pl-5 text-3xl font-medium text-white'>
-                {title}
+              <span className='pl-2 text-2xl font-medium text-white'>
+                {/* {title} */}
               </span>
             </a>
           </Link>
