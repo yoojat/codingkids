@@ -374,8 +374,8 @@ const Home: NextPage = () => {
               <Image
                 alt='줌 강의 사진'
                 src='/gallery1.png'
-                width={300}
-                height={200}
+                width={800}
+                height={600}
                 objectFit={'contain'}
               />
             </GalleyItem>
@@ -383,8 +383,8 @@ const Home: NextPage = () => {
               <Image
                 alt='현장 강의 사진'
                 src='/teaching.jpeg'
-                width={300}
-                height={200}
+                width={1000}
+                height={700}
                 objectFit={'contain'}
               />
             </GalleyItem>

@@ -90,6 +90,7 @@ export const CeoContainer = tw.div`
 `;
 
 export const CeoImageContainer = tw.div`
+text-center
   -z-10
 `;
 export const CeoImageTitle = tw.h3`
@@ -126,6 +127,9 @@ mt-16
 export const IntroducingCeoItem = tw.div`
 bg-orange-400
 drop-shadow-2xl
+w-4/5
+max-w-xl
+mx-auto
 
 `;
 export const IntroducingCeoTitle = tw.div`
