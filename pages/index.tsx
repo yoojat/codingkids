@@ -283,7 +283,7 @@ const Home: NextPage = () => {
             <CourseItemCotent>
               온라인 2시간+오프라인 1시간
               <br />
-              코딩키드가 되기위한 기본과정.
+              코딩키즈가 되기위한 기본과정.
               <br />
               정보올림피아드 기초 과정
             </CourseItemCotent>
