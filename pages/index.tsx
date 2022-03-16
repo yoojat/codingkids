@@ -175,7 +175,7 @@ const Home: NextPage = () => {
           </IntroducingCeoItem>
         </IntroducingCeo>
       </RecordingSection>
-      <WhySection>
+      <WhySection id='introduce'>
         <WhyTitleContainer>
           <WhyTitle>
             왜 <span className='text-4xl text-blue-400'>코딩키즈</span>여야
@@ -188,17 +188,17 @@ const Home: NextPage = () => {
               <AnswerImageContainer>
                 <Image
                   src='/coding_kid1.jpeg'
-                  width={500}
-                  height={350}
+                  width={700}
+                  height={500}
                   objectFit={'contain'}
                   alt={'왜 코딩을 학습해야할까? 1번답'}
                 />
               </AnswerImageContainer>
+            </div>
+            <div className='max-w-xs sm:flex sm:flex-col sm:justify-center'>
               <AnswerTitleContainer>
                 <AnswerTitle>코딩을 배운다는 것은,</AnswerTitle>
               </AnswerTitleContainer>
-            </div>
-            <div className='max-w-xs'>
               <AnswerContentContainer>
                 <AnswerContent>
                   컴퓨터를 배운다는 뜻이 아닙니다. 이것은 단순 컴퓨터 언어를
@@ -214,19 +214,19 @@ const Home: NextPage = () => {
               <AnswerImageContainer>
                 <Image
                   src='/coding_kid2.jpeg'
-                  width={500}
-                  height={350}
+                  width={700}
+                  height={500}
                   objectFit={'contain'}
                   alt={'왜 코딩을 학습해야할까? 1번답'}
                 />
               </AnswerImageContainer>
+            </div>
+            <div className='max-w-xs sm:flex sm:flex-col sm:justify-center'>
               <AnswerTitleContainer>
                 <AnswerTitle>
                   코딩키즈는 가장 선진적인 교육을 추구합니다.
                 </AnswerTitle>
               </AnswerTitleContainer>
-            </div>
-            <div className='max-w-xs'>
               <AnswerContentContainer>
                 <AnswerContent>
                   미국식 창의력 교육과 한국식 문제해결 교육을 결합하여, 새로운
@@ -240,17 +240,17 @@ const Home: NextPage = () => {
               <AnswerImageContainer>
                 <Image
                   src='/coding_kid3.jpeg'
-                  width={500}
-                  height={350}
+                  width={700}
+                  height={500}
                   objectFit={'contain'}
                   alt={'왜 코딩을 학습해야할까? 1번답'}
                 />
               </AnswerImageContainer>
+            </div>
+            <div className='max-w-xs sm:flex sm:flex-col sm:justify-center'>
               <AnswerTitleContainer>
                 <AnswerTitle>믿을 수 있는 코딩 교육</AnswerTitle>
               </AnswerTitleContainer>
-            </div>
-            <div className='max-w-xs'>
               <AnswerContentContainer>
                 <AnswerContent>
                   카이스트, 부산대 출신 강사진의 교육에 대한 열정과 자신감을
@@ -261,7 +261,7 @@ const Home: NextPage = () => {
           </AnswerItem>
         </AnswerContainer>
       </WhySection>
-      <CourseWorkSection>
+      <CourseWorkSection id='coursework'>
         <CourseWorkTitleContainer>
           <CourseTitle>코스웍</CourseTitle>
         </CourseWorkTitleContainer>
@@ -364,7 +364,7 @@ const Home: NextPage = () => {
           </CourseItemContentContainer>
         </CourseItem>
       </CourseWorkSection>
-      <GallerySection>
+      <GallerySection id='gallery'>
         <GalleryTitleContainer>
           <GalleryTitle>코딩키즈 갤러리</GalleryTitle>
         </GalleryTitleContainer>
@@ -391,6 +391,13 @@ const Home: NextPage = () => {
           </GalleryContents>
         </GalleryContentContainer>
       </GallerySection>
+      <style global jsx>
+        {`
+          html {
+            scroll-behavior: smooth;
+          }
+        `}
+      </style>
     </>
   );
 };

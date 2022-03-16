@@ -29,8 +29,8 @@ const TopLogoContainer = tw.div`
 `;
 
 const ImageContainer = tw.div`
-w-10
-h-10
+w-20
+h-20
 relative
 mt-2
 `;
@@ -54,7 +54,7 @@ lg:flex
 lg:relative
 lg:space-x-7
 text-lg
-bg-[#FF3E53]
+bg-black
 z-50
 px-8
 pt-5
@@ -145,7 +145,7 @@ export default function NavBar({
                 <Image
                   src={logo}
                   alt={title}
-                  width={150}
+                  width={75}
                   height={100}
                   objectFit='contain'
                 />
@@ -154,7 +154,7 @@ export default function NavBar({
           </SideBarLogoContainer>
           {menuItems.map((menuItem, index) => (
             <Link href={menuItem.path} key={index}>
-              <a>
+              <a onClick={() => setIsSideMenuShow((prev) => !prev)}>
                 <TopMenuItem>{menuItem.name}</TopMenuItem>
               </a>
             </Link>

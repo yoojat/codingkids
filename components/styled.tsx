@@ -175,6 +175,8 @@ export const AnswerItem = tw.div`
   md:even:space-x-reverse
   md:space-x-5
   justify-center
+  max-w-6xl
+  mx-auto
 `;
 export const AnswerTitleContainer = tw.div``;
 export const AnswerTitle = tw.h4`
@@ -184,7 +186,6 @@ export const AnswerTitle = tw.h4`
 `;
 export const AnswerImageContainer = tw.div``;
 export const AnswerContentContainer = tw.div`
-  md:mt-16
 `;
 export const AnswerContent = tw.p``;
 export const IntroducingSystemContainer = tw.div`
