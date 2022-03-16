@@ -81,7 +81,7 @@ const Home: NextPage = () => {
                 불만족스럽다면, 100% 환불 도와드립니다.
               </SubText>
               <ButtonContainer>
-                <Link href='https://forms.gle/PQa3GG89RCGKahZK6'>
+                <Link href='http://pf.kakao.com/_ixikWb'>
                   <a target='_blank'>
                     <ContactBtn>무료 상담 신청</ContactBtn>
                   </a>
