@@ -1,6 +1,6 @@
 export const bgColor = 'bg-violet-500';
 export const logo = '/coding_kids_logo.png';
-export const title = '코딩 키드';
+export const title = '부산코딩스쿨';
 export const backgroundImage = '/coding_kids_background.jpg';
 
 type Menu = {

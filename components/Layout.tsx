@@ -99,7 +99,7 @@ export default function Layout({ children }: IProps) {
               </InfoItem>
             </InfoContents>
           </InfoCard>
-          <div className='py-10'>코딩키드</div>
+          <div className='py-10'>부산코딩스쿨</div>
         </Footer>
       </ContentLayout>
     </>

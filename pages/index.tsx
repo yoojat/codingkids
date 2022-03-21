@@ -88,7 +88,7 @@ const Home: NextPage = () => {
                 </Link>
                 <Link href='https://blog.naver.com/rlaworlawo321'>
                   <a target='_blank'>
-                    <ContactBtn>코딩 키드 블로그</ContactBtn>
+                    <ContactBtn>부산코딩스쿨 블로그</ContactBtn>
                   </a>
                 </Link>
               </ButtonContainer>
@@ -159,7 +159,7 @@ const Home: NextPage = () => {
             <IntroducingCeoContent>
               <ul>
                 <li>- 부산대학교 공과대학 학사</li>
-                <li>- 코딩키드 대표이사</li>
+                <li>- 부산코딩스쿨 대표이사</li>
                 <li>- (주)크리플레이 CTO</li>
                 <li>- 블루닷라운지 CTO</li>
                 <li>- 무인공간통합센터 CTO</li>
@@ -178,7 +178,7 @@ const Home: NextPage = () => {
       <WhySection id='introduce'>
         <WhyTitleContainer>
           <WhyTitle>
-            왜 <span className='text-4xl text-blue-400'>코딩키드</span>여야
+            왜 <span className='text-4xl text-blue-400'>부산코딩스쿨</span>여야
             할까요?
           </WhyTitle>
         </WhyTitleContainer>
@@ -224,7 +224,7 @@ const Home: NextPage = () => {
             <div className='max-w-xs sm:flex sm:flex-col sm:justify-center'>
               <AnswerTitleContainer>
                 <AnswerTitle>
-                  코딩키드는 가장 선진적인 교육을 추구합니다.
+                  부산코딩스쿨은 가장 선진적인 교육을 추구합니다.
                 </AnswerTitle>
               </AnswerTitleContainer>
               <AnswerContentContainer>
@@ -283,7 +283,7 @@ const Home: NextPage = () => {
             <CourseItemCotent>
               온라인 2시간+오프라인 1시간
               <br />
-              코딩키드가 되기위한 기본과정.
+              부산코딩스쿨의 기본과정.
               <br />
               정보올림피아드 기초 과정
             </CourseItemCotent>
@@ -366,7 +366,7 @@ const Home: NextPage = () => {
       </CourseWorkSection>
       <GallerySection id='gallery'>
         <GalleryTitleContainer>
-          <GalleryTitle>코딩키드 갤러리</GalleryTitle>
+          <GalleryTitle>부산코딩스쿨 갤러리</GalleryTitle>
         </GalleryTitleContainer>
         <GalleryContentContainer>
           <GalleryContents>
