@@ -269,7 +269,7 @@ const Home: NextPage = () => {
           <CourseItemTitleContainer>
             <CourseItemImgContainer>
               <Image
-                src='/coding_kids_logo.png'
+                src='/busan_coding_school.png'
                 width={150}
                 height={160}
                 objectFit={'contain'}
@@ -293,7 +293,7 @@ const Home: NextPage = () => {
           <CourseItemTitleContainer>
             <CourseItemImgContainer>
               <Image
-                src='/coding_kids_logo.png'
+                src='/busan_coding_school.png'
                 width={150}
                 height={160}
                 objectFit={'contain'}
@@ -317,7 +317,7 @@ const Home: NextPage = () => {
           <CourseItemTitleContainer>
             <CourseItemImgContainer>
               <Image
-                src='/coding_kids_logo.png'
+                src='/busan_coding_school.png'
                 width={150}
                 height={160}
                 objectFit={'contain'}
@@ -343,7 +343,7 @@ const Home: NextPage = () => {
           <CourseItemTitleContainer>
             <CourseItemImgContainer>
               <Image
-                src='/coding_kids_logo.png'
+                src='/busan_coding_school.png'
                 width={150}
                 height={160}
                 objectFit={'contain'}

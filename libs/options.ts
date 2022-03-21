@@ -1,5 +1,5 @@
 export const bgColor = 'bg-violet-500';
-export const logo = '/coding_kids_logo.png';
+export const logo = '/busan_coding_school.png';
 export const title = '부산코딩스쿨';
 export const backgroundImage = '/coding_kids_background.jpg';
 

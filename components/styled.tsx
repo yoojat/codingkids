@@ -48,12 +48,12 @@ text-center`;
 export const ContactBtn = tw.button`
   bg-slate-50
   py-3
-  text-xs
+  text-sm
   font-bold
   rounded-md
   mx-2
   my-2
-  w-24
+  w-36
 `;
 
 export const RecordingSection = tw.section`
