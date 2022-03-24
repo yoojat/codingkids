@@ -296,3 +296,76 @@ export const GalleryContents = tw.div`
 `;
 
 export const GalleyItem = tw.div``;
+
+export const SystemIntroduceContainer = tw.div`
+  flex
+  justify-center
+  w-full
+  flex-wrap
+  space-x-10
+  space-y-10
+  sm:space-y-0
+  mt-20
+  `;
+export const SystemIntroduceItem = tw.div`
+  bg-indigo-500
+  border-white
+  px-10
+  py-8
+  border-8
+  rounded-tr-10xl
+  rounded-br-10xl
+  rounded-bl-10xl
+  rounded-tl-3xl
+  flex
+  flex-col
+  justify-center
+  items-center
+  text-center
+  w-72
+  drop-shadow-[10px_3px_0px_#392a83]
+`;
+export const SystemIntroduceNumberTag = tw.div`
+  bg-white
+    text-center
+    rounded-full
+    px-3
+    py-1
+    mb-3
+`;
+export const SystemIntroduceTitle = tw.div`
+  text-3xl
+  font-bold
+  text-white
+  mb-3
+`;
+
+export const SystemIntroduceTitleSpan = tw.span`
+  text-orange-300
+`;
+
+export const SystemIntroduceContent = tw.div`
+  text-slate-300
+`;
+
+export const CurriculumSection = tw.section`
+  bg-gray-100
+  pb-36
+`;
+
+export const CurriculumnTitle = tw.div`
+  text-center
+  py-10
+  text-2xl
+  font-bold
+  `;
+
+export const CurriculumContainer = tw.div`
+  bg-white
+  xl:bg-inherit
+  xl:relative
+  max-w-7xl
+  mx-5
+  xl:mx-auto
+  px-7
+`;

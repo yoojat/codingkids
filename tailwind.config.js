@@ -24,6 +24,9 @@ module.exports = {
       textShadow: {
         '2xl': '2px 2px 8px rgba(0,0,0,1)',
       },
+      borderRadius: {
+        '10xl': '400px',
+      },
     },
   },
   plugins: [require('tailwindcss-textshadow')],

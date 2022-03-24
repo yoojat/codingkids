@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import tw from 'tailwind-styled-components';
-import BodyItem from '@components/BodyItem';
 import {
   BigTitle,
   ButtonContainer,
@@ -12,14 +11,8 @@ import {
   TopContentContainer,
   TopSection,
   RecordingSection,
-  RecordingTitleContainer,
-  RecordingTitle,
-  RecordingSubtitle,
-  RecordingListContainer,
-  RecordingList,
   CeoContainer,
   CeoImageContainer,
-  CeoImageTitle,
   SeoMessageContainer,
   SeoMessageWrapper,
   SeoMessage,
@@ -37,35 +30,29 @@ import {
   AnswerImageContainer,
   AnswerContentContainer,
   AnswerContent,
-  IntroducingSystemContainer,
-  IntroducingSystemTitleContainer,
-  IntroducingSystemTitle,
-  IntroducingSystemItem,
-  IntroducingSystemImgContainer,
-  IntroducingSystemItemTitleContainer,
-  IntroducingSystemItemTitle,
-  IntroducingSystemItemDescriptionContainer,
-  IntroducingSystemItemDescription,
-  CourseWorkSection,
-  CourseWorkTitleContainer,
-  CourseTitle,
-  CourseContentContainer,
-  CourseItem,
-  CourseItemImgContainer,
-  CourseItemTitleContainer,
-  CourseItemTitle,
-  CourseItemContentContainer,
-  CourseItemCotent,
   GallerySection,
   GalleryTitleContainer,
   GalleryTitle,
   GalleryContentContainer,
   GalleryContents,
   GalleyItem,
+  SystemIntroduceContainer,
+  SystemIntroduceItem,
+  SystemIntroduceNumberTag,
+  SystemIntroduceTitle,
+  SystemIntroduceTitleSpan,
+  SystemIntroduceContent,
+  CurriculumSection,
+  CurriculumnTitle,
+  CurriculumContainer,
 } from '@components/styled';
 import Link from 'next/link';
+import { useState } from 'react';
+import CurriculumnItem from '@components/CurriculumnItem';
+import { CurriculumnContents } from '@libs/options';
 
 const Home: NextPage = () => {
+  const [nowIndex, setNowIndex] = useState(0);
   return (
     <>
       <TopSection>
@@ -94,45 +81,58 @@ const Home: NextPage = () => {
               </ButtonContainer>
             </TitleContainer>
           </HeadSection>
+          <SystemIntroduceContainer>
+            <SystemIntroduceItem>
+              <SystemIntroduceNumberTag>POINT 01</SystemIntroduceNumberTag>
+
+              <SystemIntroduceTitle>
+                <SystemIntroduceTitleSpan>플립러닝</SystemIntroduceTitleSpan>
+                <br />
+                교육 시스템
+              </SystemIntroduceTitle>
+              <SystemIntroduceContent>
+                학생들의 집중도UP!
+                <br />
+                자기주도학습 효과
+                <br />
+                최대화
+              </SystemIntroduceContent>
+            </SystemIntroduceItem>
+            <SystemIntroduceItem>
+              <SystemIntroduceNumberTag>POINT 01</SystemIntroduceNumberTag>
+
+              <SystemIntroduceTitle>
+                <SystemIntroduceTitleSpan>카이스트</SystemIntroduceTitleSpan>
+                연구진 교육 시스템
+              </SystemIntroduceTitle>
+              <SystemIntroduceContent>
+                카이스트, 부산대 출신
+                <br />
+                연구진들이 직접 개발한
+                <br />
+                교육시스템
+              </SystemIntroduceContent>
+            </SystemIntroduceItem>
+            <SystemIntroduceItem>
+              <SystemIntroduceNumberTag>POINT 02</SystemIntroduceNumberTag>
+
+              <SystemIntroduceTitle>
+                학부모 <br />
+                <SystemIntroduceTitleSpan>피드백</SystemIntroduceTitleSpan>
+                시스템
+              </SystemIntroduceTitle>
+              <SystemIntroduceContent>
+                학습 후 즉각적인
+                <br />
+                학습 성취도에 따른
+                <br />
+                피드백 제공
+              </SystemIntroduceContent>
+            </SystemIntroduceItem>
+          </SystemIntroduceContainer>
         </TopContentContainer>
       </TopSection>
       <RecordingSection>
-        {/* <RecordingTitleContainer>
-          <RecordingTitle>합격 및 수상</RecordingTitle>
-          <RecordingSubtitle>
-            영재원 학생들의 합격 및 수상을 축하드립니다.
-          </RecordingSubtitle>
-        </RecordingTitleContainer>
-        <RecordingListContainer>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-          <RecordingList>2018 정보올림피아드 전국대회 은상 - O환</RecordingList>
-        </RecordingListContainer> */}
         <CeoContainer>
           <CeoImageContainer>
             <Image
@@ -261,109 +261,80 @@ const Home: NextPage = () => {
           </AnswerItem>
         </AnswerContainer>
       </WhySection>
-      <CourseWorkSection id='coursework'>
-        <CourseWorkTitleContainer>
-          <CourseTitle>코스웍</CourseTitle>
-        </CourseWorkTitleContainer>
-        <CourseItem className='border-t-sky-500'>
-          <CourseItemTitleContainer>
-            <CourseItemImgContainer>
-              <Image
-                src='/busan_coding_school.png'
-                width={150}
-                height={160}
-                objectFit={'contain'}
+
+      <CurriculumSection id='curriculum'>
+        <CurriculumnTitle>초급 커리큘럼</CurriculumnTitle>
+
+        <CurriculumContainer>
+          {CurriculumnContents.junior.map(
+            ({ title, week, contentTitle, contentLists, isLast, index }) => (
+              <CurriculumnItem
+                nowIndex={nowIndex}
+                setNowIndex={setNowIndex}
+                index={index + 1}
+                title={title}
+                week={week}
+                contentTitle={contentTitle}
+                contentLists={contentLists}
+                isLast={isLast}
               />
-            </CourseItemImgContainer>
-            <CourseItemTitle className='text-sky-500'>
-              초급 코딩(3개월) - 월 10만원
-            </CourseItemTitle>
-          </CourseItemTitleContainer>
-          <CourseItemContentContainer>
-            <CourseItemCotent>
-              온라인 2시간+오프라인 1시간
-              <br />
-              부산코딩스쿨의 기본과정.
-              <br />
-              정보올림피아드 기초 과정
-            </CourseItemCotent>
-          </CourseItemContentContainer>
-        </CourseItem>
-        <CourseItem className='border-t-green-500'>
-          <CourseItemTitleContainer>
-            <CourseItemImgContainer>
-              <Image
-                src='/busan_coding_school.png'
-                width={150}
-                height={160}
-                objectFit={'contain'}
+            )
+          )}
+        </CurriculumContainer>
+        <CurriculumnTitle>중급 커리큘럼</CurriculumnTitle>
+
+        <CurriculumContainer>
+          {CurriculumnContents.intermediate.map(
+            ({ title, week, contentTitle, contentLists, isLast, index }) => (
+              <CurriculumnItem
+                nowIndex={nowIndex}
+                setNowIndex={setNowIndex}
+                index={index + 1}
+                title={title}
+                week={week}
+                contentTitle={contentTitle}
+                contentLists={contentLists}
+                isLast={isLast}
               />
-            </CourseItemImgContainer>
-            <CourseItemTitle className='text-green-500'>
-              중급 코딩(6개월) - 월 25만원
-            </CourseItemTitle>
-          </CourseItemTitleContainer>
-          <CourseItemContentContainer>
-            <CourseItemCotent>
-              온라인 1시간 + 오프라인 2시간
-              <br />
-              자료구조 및 알고리즘 기초
-              <br />
-              정보올림피아드 실력키우기 과정
-            </CourseItemCotent>
-          </CourseItemContentContainer>
-        </CourseItem>
-        <CourseItem className='border-t-orange-400'>
-          <CourseItemTitleContainer>
-            <CourseItemImgContainer>
-              <Image
-                src='/busan_coding_school.png'
-                width={150}
-                height={160}
-                objectFit={'contain'}
+            )
+          )}
+        </CurriculumContainer>
+        <CurriculumnTitle>웹 제작 과정</CurriculumnTitle>
+        <CurriculumContainer>
+          {CurriculumnContents.web.map(
+            ({ title, week, contentTitle, contentLists, isLast, index }) => (
+              <CurriculumnItem
+                nowIndex={nowIndex}
+                setNowIndex={setNowIndex}
+                index={index + 1}
+                title={title}
+                week={week}
+                contentTitle={contentTitle}
+                contentLists={contentLists}
+                isLast={isLast}
               />
-            </CourseItemImgContainer>
-            <CourseItemTitle className='text-orange-400'>
-              고급 코딩(12개월) - 월 35만원
-            </CourseItemTitle>
-          </CourseItemTitleContainer>
-          <CourseItemContentContainer>
-            <CourseItemCotent>
-              온라인 2 + 오프라인 2시간
-              <br />
-              코딩영재로 완성되어 가는 과정
-              <br />
-              자료구조 및 알고리즘 심화
-              <br />
-              정보올림피아드 기출문제반
-            </CourseItemCotent>
-          </CourseItemContentContainer>
-        </CourseItem>
-        <CourseItem className='border-t-orange-400'>
-          <CourseItemTitleContainer>
-            <CourseItemImgContainer>
-              <Image
-                src='/busan_coding_school.png'
-                width={150}
-                height={160}
-                objectFit={'contain'}
+            )
+          )}
+        </CurriculumContainer>
+        <CurriculumnTitle>웹 인터랙티브 과정</CurriculumnTitle>
+        <CurriculumContainer>
+          {CurriculumnContents.interactive.map(
+            ({ title, week, contentTitle, contentLists, isLast, index }) => (
+              <CurriculumnItem
+                nowIndex={nowIndex}
+                setNowIndex={setNowIndex}
+                index={index + 1}
+                title={title}
+                week={week}
+                contentTitle={contentTitle}
+                contentLists={contentLists}
+                isLast={isLast}
               />
-            </CourseItemImgContainer>
-            <CourseItemTitle className='text-orange-400'>
-              미래형반(6개월) - 월 35만원
-            </CourseItemTitle>
-          </CourseItemTitleContainer>
-          <CourseItemContentContainer>
-            <CourseItemCotent>
-              온라인 2 + 오프라인 2시간
-              <br />
-              초급, 중급을 듣고 난 수강생
-              <br />
-              프로젝트 진행 - 사고형
-            </CourseItemCotent>
-          </CourseItemContentContainer>
-        </CourseItem>
-      </CourseWorkSection>
+            )
+          )}
+        </CurriculumContainer>
+      </CurriculumSection>
+
       <GallerySection id='gallery'>
         <GalleryTitleContainer>
           <GalleryTitle>부산코딩스쿨 갤러리</GalleryTitle>
