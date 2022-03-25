@@ -346,6 +346,7 @@ export const CurriculumnContents = {
         'Django, html, css, javascript를 활용하여 유려한 웹앱을 제작합니다.',
       ],
       index: 32,
+      isLast: true,
     },
   ],
   interactive: [
@@ -463,6 +464,7 @@ export const CurriculumnContents = {
         '브라우저내의 글 읽어 주기 기능을 통해서 원어민 발음으로 글을 들을 수 있게 됩니다.',
       ],
       index: 43,
+      isLast: true,
     },
   ],
 };
