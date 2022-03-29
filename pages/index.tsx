@@ -269,6 +269,7 @@ const Home: NextPage = () => {
           {CurriculumnContents.junior.map(
             ({ title, week, contentTitle, contentLists, isLast, index }) => (
               <CurriculumnItem
+                key={index}
                 nowIndex={nowIndex}
                 setNowIndex={setNowIndex}
                 index={index + 1}
@@ -287,6 +288,7 @@ const Home: NextPage = () => {
           {CurriculumnContents.intermediate.map(
             ({ title, week, contentTitle, contentLists, isLast, index }) => (
               <CurriculumnItem
+                key={index}
                 nowIndex={nowIndex}
                 setNowIndex={setNowIndex}
                 index={index + 1}
@@ -304,6 +306,7 @@ const Home: NextPage = () => {
           {CurriculumnContents.web.map(
             ({ title, week, contentTitle, contentLists, isLast, index }) => (
               <CurriculumnItem
+                key={index}
                 nowIndex={nowIndex}
                 setNowIndex={setNowIndex}
                 index={index + 1}
@@ -321,6 +324,7 @@ const Home: NextPage = () => {
           {CurriculumnContents.interactive.map(
             ({ title, week, contentTitle, contentLists, isLast, index }) => (
               <CurriculumnItem
+                key={index}
                 nowIndex={nowIndex}
                 setNowIndex={setNowIndex}
                 index={index + 1}

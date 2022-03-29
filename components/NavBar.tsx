@@ -154,7 +154,7 @@ export default function NavBar({
           </SideBarLogoContainer>
           {menuItems.map((menuItem, index) => (
             <Link href={menuItem.path} key={index}>
-              <a onClick={() => setIsSideMenuShow((prev) => !prev)}>
+              <a onClick={() => setIsSideMenuShow(false)}>
                 <TopMenuItem>{menuItem.name}</TopMenuItem>
               </a>
             </Link>
