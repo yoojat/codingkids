@@ -137,7 +137,7 @@ const Home: NextPage = () => {
         <CeoContainer>
           <CeoImageContainer>
             <Image
-              src='/gallery/IMG_2315.jpeg'
+              src='/teaching2.jpeg'
               width={1300}
               height={900}
               alt='ceo사진'
