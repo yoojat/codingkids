@@ -10,7 +10,7 @@ export default function Seo({ title }: IProps) {
       {title ? (
         <title>{title} | 부산코딩스쿨</title>
       ) : (
-        <title>부산코딩스쿨 - 부산 초등학생 코딩 수업</title>
+        <title>부산코딩스쿨 - 부산코딩학원</title>
       )}
     </Head>
   );
