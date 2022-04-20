@@ -285,7 +285,7 @@ export const GalleryTitle = tw.h3`
 `;
 export const GalleryContentContainer = tw.div`
   text-slate-50
-  px-8
+  px-20
   pt-1
 `;
 
@@ -293,6 +293,8 @@ export const GalleryContents = tw.div`
   grid
   grid-cols-2
   gap-2
+  max-w-4xl
+  mx-auto
 `;
 
 export const GalleyItem = tw.div``;

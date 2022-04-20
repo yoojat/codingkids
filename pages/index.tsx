@@ -50,6 +50,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import CurriculumnItem from '@components/CurriculumnItem';
 import { CurriculumnContents } from '@libs/options';
+import { galleryImgs } from '@libs/gallery';
 
 const Home: NextPage = () => {
   const [nowIndex, setNowIndex] = useState(0);
@@ -345,24 +346,17 @@ const Home: NextPage = () => {
         </GalleryTitleContainer>
         <GalleryContentContainer>
           <GalleryContents>
-            <GalleyItem>
-              <Image
-                alt='줌 강의 사진'
-                src='/gallery1.png'
-                width={800}
-                height={600}
-                objectFit={'contain'}
-              />
-            </GalleyItem>
-            <GalleyItem>
-              <Image
-                alt='현장 강의 사진'
-                src='/teaching.jpeg'
-                width={1000}
-                height={700}
-                objectFit={'contain'}
-              />
-            </GalleyItem>
+            {galleryImgs.map((img) => (
+              <GalleyItem key={img}>
+                <Image
+                  alt={img}
+                  src={img}
+                  width={1000}
+                  height={700}
+                  objectFit={'contain'}
+                />
+              </GalleyItem>
+            ))}
           </GalleryContents>
         </GalleryContentContainer>
       </GallerySection>

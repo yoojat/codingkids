@@ -120,49 +120,8 @@ export const CurriculumnContents = {
       index: 10,
     },
     {
-      title: '꽃잎 한 장으로 꽃송이 만들기',
-      week: '10',
-      contentTitle: 'Chapter 11 | 꽃잎 한 장으로 꽃송이 만들기',
-      contentLists: [
-        '반복되는 명령을 ‘~번 반복하기’ 블록으로 간단히 만들 수 있게 됩니다.',
-        '회전각도와 반복하기 횟수를 조절하여 다양한 모양의 꽃송이를 만들 수 있게 됩니다.',
-        '여러 가지 효과를 통해 나만의 꽃송이를 만들 수 있게 됩니다.',
-      ],
-      index: 11,
-    },
-    {
-      title: '무기점에 간 울버린',
-      week: '11',
-      contentTitle: 'Chapter 12 | 무기점에 간 울버린',
-      contentLists: [
-        '실행화면의 좌표를 이용해 오브젝트를 원하는 위치로 옮길 수 있게 됩니다.',
-        '오브젝트 정보에 있는 좌표를 이용해 오브젝트를 원래 위치로 옮길 수 있게 됩니다.',
-      ],
-      index: 12,
-    },
-    {
-      title: '나만의 그림판 만들기',
-      week: '12',
-      contentTitle: 'Chapter 13 | 나만의 그림판 만들기',
-      contentLists: [
-        '신호를 만들어 오브젝트간에 약속된 신호를 주고 받는 작품을 만들 수 있게 됩니다.',
-        '신호를 활용하여 그림판 의 다양한 기능을 만들 수 있게 됩니다.',
-      ],
-      index: 13,
-    },
-    {
-      title: '고슴도치 이야기',
-      week: '13',
-      contentTitle: 'Chapter 14 | 고슴도치 이야기',
-      contentLists: [
-        '글상자를 만들고 이야기를 쓸 수 있게 됩니다.',
-        '신호를 활용하여 오브젝트간 신호를 주고받을 수 있게 됩니다.',
-      ],
-      index: 14,
-    },
-    {
       title: '나만의 작품을 만들어요(1)',
-      week: '14',
+      week: '10',
       contentTitle: 'Chapter 15 | 나만의 작품을 만들어요(1)',
       contentLists: [
         '만들고 싶은 작품을 구상하고 그 내용을 그림과 글로 표현할 수 있게 됩니다.',
@@ -172,7 +131,7 @@ export const CurriculumnContents = {
     },
     {
       title: '나만의 작품을 만들어요(2)',
-      week: '15',
+      week: '11',
       contentTitle: 'Chapter 16 | 나만의 작품을 만들어요(2)',
       contentLists: [
         '구상한 내용으로 작품을 만들 수 있게 됩니다.',
@@ -182,7 +141,7 @@ export const CurriculumnContents = {
     },
     {
       title: '나만의 작품을 만들어요(3)',
-      week: '16',
+      week: '12',
       contentTitle: 'Chapter 17 | 나만의 작품을 만들어요(3)',
       contentLists: [
         '만든 작품을 공유하고 친구들의 작품에 좋은 의견을 줄 수 있게 됩니다.',
@@ -269,19 +228,10 @@ export const CurriculumnContents = {
       ],
       index: 24,
     },
-    {
-      title: '파이썬을 통해 웹페이지 만들기',
-      week: '7',
-      contentTitle: 'Chapter 8 | 파이썬을 통해 웹페이지 만들기',
-      contentLists: [
-        '파이썬 웹 제작 프레임 워크인 Django에 대해서 알아봅니다.',
-        'Django설치를 하고 웹페이지를 제작합니다.',
-      ],
-      index: 25,
-    },
+
     {
       title: '파이썬 스크롤링',
-      week: '8',
+      week: '7-8',
       contentTitle: 'Chapter 9 | 파이썬 스크롤',
       contentLists: [
         '웹상에 있는 정보를 실시간으로 가지고 올 수 있는 파이썬 스크롤 기능을 살펴봅니다.',
@@ -289,6 +239,16 @@ export const CurriculumnContents = {
       ],
       index: 26,
       isLast: true,
+    },
+    {
+      title: '파이썬을 통해 웹페이지 만들기(dJango)',
+      week: '9-12',
+      contentTitle: 'Chapter 8 | 파이썬을 통해 웹페이지 만들기',
+      contentLists: [
+        '파이썬 웹 제작 프레임 워크인 Django에 대해서 알아봅니다.',
+        'Django설치를 하고 웹페이지를 제작합니다.',
+      ],
+      index: 25,
     },
   ],
   web: [
@@ -332,14 +292,14 @@ export const CurriculumnContents = {
     },
     {
       title: 'javascript 고급',
-      week: '5',
+      week: '5-8',
       contentTitle: 'Chapter 5 | javascript 고급',
       contentLists: ['javascript의 고급 문법에 대해서 알게 됩니다.'],
       index: 31,
     },
     {
       title: '웹피이지 제작',
-      week: '6-8',
+      week: '9-12',
       contentTitle: 'Chapter 6 | 웹페이지 제작',
       contentLists: [
         'Django프레임 워크를 살펴봅니다.',
@@ -464,6 +424,26 @@ export const CurriculumnContents = {
         '브라우저내의 글 읽어 주기 기능을 통해서 원어민 발음으로 글을 들을 수 있게 됩니다.',
       ],
       index: 43,
+    },
+    {
+      title: '비디오 플레이어 커스텀하기',
+      week: '11',
+      contentTitle: 'Chapter 12 |  비디오 플레이어 커스텀하기',
+      contentLists: [
+        '웹페이지에 비디오플레이어를 삽입하는 방법을 알게 됩니다.',
+        '웹페이지에 삽입 된 비디오 플레이어를 커스텀하는 방법을 알게 됩니다.',
+      ],
+      index: 44,
+    },
+    {
+      title: '키 시퀀스 디텍션',
+      week: '12',
+      contentTitle: 'Chapter 13 |  키 시퀀스 디텍션',
+      contentLists: [
+        '자바스크립트에서 문자열을 다루는 방법을 알게 됩니다.',
+        '문자열 찾기를 통해 할 수 있는 기능들을 알아보고 코딩해봅니다.',
+      ],
+      index: 45,
       isLast: true,
     },
   ],
