@@ -73,9 +73,9 @@ animate-wiggle
 
 const TopMenuItem = tw.div`
 text-base
-font-medium
+font-bold
 pb-5
-text-white
+text-blue-600
 `;
 
 const DarkCover = tw.div<{ $isSideMenuShow: boolean }>`
@@ -167,7 +167,7 @@ export default function NavBar({
               xmlns='http://www.w3.org/2000/svg'
               fill='white'
               viewBox='0 0 24 24'
-              stroke='white'
+              stroke='#2563EB'
             >
               <path
                 strokeLinecap='round'
