@@ -24,28 +24,30 @@ const InfoCard = tw.div`
   max-w-xl
   -mt-28
   border-2
+  flex
+  justify-center
   
 `;
 const InfoContents = tw.div`
+flex
+flex-col
 `;
 const InfoItem = tw.div`
-  flex
-  justify-center
   py-1
 `;
 const InfoTitle = tw.div`
-w-20`;
-const InfoContent = tw.div``;
-
+  w-40
+  inline-block
+`;
+const InfoContent = tw.div`
+inline-block
+`;
 const Footer = tw.footer`
   text-slate-100
   w-full
   py-5
   bg-[#0F2235]
-  text-center
-  font-semibold
-
-  
+  font-semibold 
 `;
 
 interface IProps {
@@ -91,15 +93,23 @@ export default function Layout({ children }: IProps) {
               </InfoItem>
               <InfoItem>
                 <InfoTitle>주소</InfoTitle>
-                <InfoContent>동래구 연안로41 서정빌딩 6층</InfoContent>
+                <InfoContent>동래구 석사로 10-1 4층</InfoContent>
               </InfoItem>
               <InfoItem>
                 <InfoTitle>문의처</InfoTitle>
                 <InfoContent>rlaworlawo321@naver.com</InfoContent>
               </InfoItem>
+              <InfoItem>
+                <InfoTitle>대표</InfoTitle>
+                <InfoContent>송병근</InfoContent>
+              </InfoItem>
+              <InfoItem>
+                <InfoTitle>Copyright 2021.</InfoTitle>
+                <InfoContent>(주)크리플레이</InfoContent>
+              </InfoItem>
             </InfoContents>
           </InfoCard>
-          <div className='py-10'>부산코딩스쿨</div>
+          <div className='py-10 text-center'>부산코딩스쿨</div>
         </Footer>
       </ContentLayout>
     </>
