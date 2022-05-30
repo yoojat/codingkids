@@ -74,9 +74,9 @@ const Home: NextPage = () => {
                     <ContactBtn>무료 상담 신청</ContactBtn>
                   </a>
                 </Link>
-                <Link href='https://forms.gle/XtipXjdMStQbEdFN7'>
+                <Link href='https://blog.naver.com/rlaworlawo321'>
                   <a target='_blank'>
-                    <ContactBtn>코딩 역량 테스트</ContactBtn>
+                    <ContactBtn>부산코딩스쿨 블로그</ContactBtn>
                   </a>
                 </Link>
               </ButtonContainer>
