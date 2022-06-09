@@ -93,7 +93,7 @@ export default function Layout({ children }: IProps) {
               </InfoItem>
               <InfoItem>
                 <InfoTitle>주소</InfoTitle>
-                <InfoContent>동래구 석사로 10-1 4층</InfoContent>
+                <InfoContent>북구 학사로 17번길 19 중도빌딩 4층</InfoContent>
               </InfoItem>
               <InfoItem>
                 <InfoTitle>문의처</InfoTitle>
